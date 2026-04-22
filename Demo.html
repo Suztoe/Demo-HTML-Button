@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+      function Exec() {
+        var elem = document.getElementById("OutFrame");
+        htmltext = '';
+        for (i = 1; i < 6; i++) {
+          caption = "Hello" + i;
+          htmltext += '<input type="button" value='+caption+'></input>&nbsp;';
+        }
+        elem.innerHTML = htmltext;
+      }
+    </script>
+</head>
+<body>
+  <h2>**Button Demo**</h2>
+
+  <a href="javascript:Exec();">Click to Execute</a>
+  <hr />
+  <div id="OutFrame">
+  </div>
+</body>
+</html>
